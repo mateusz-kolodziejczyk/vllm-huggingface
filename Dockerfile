@@ -1,8 +1,8 @@
-FROM vllm/vllm-openai:v0.6.2
+FROM vllm/vllm-openai:v0.6.1
 
 
-ENV VLLM_COMMIT=7193774b1ff8603ad5bf4598e5efba0d9a39b436
-ENV VLLM_VERSION=0.6.2
+ENV VLLM_COMMIT=2467b642dd9bde32a334fe5967efd78a53aa49da
+ENV VLLM_VERSION=0.6.1.post3.dev113+g2467b642.d20240924
 ENV DO_NOT_TRACK=1
 
 COPY --chmod=775 endpoints-entrypoint.sh entrypoint.sh
