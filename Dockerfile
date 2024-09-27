@@ -6,7 +6,7 @@ ENV VLLM_VERSION=0.6.1.post2
 ENV DO_NOT_TRACK=1
 COPY --chmod=775 endpoints-entrypoint.sh entrypoint.sh
 RUN pip uninstall -y vllm && \
-    pip install vllm=0.6.2
+    pip install vllm==0.6.2
 
 ENTRYPOINT ["/bin/bash", "entrypoint.sh"]
 CMD [""]
